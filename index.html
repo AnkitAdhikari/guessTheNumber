@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess The Number</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="game-heading">Number Guessing Game</h1>
+    <div class="number">?</div>
+    <div class="game-field">
+      <form class="user-input-form" action="#">
+        <input type="number" name="user-number" class="user-number" />
+        <input class="btn" type="submit" value="Guess" />
+      </form>
+      <div class="game-info">
+        <p class="score">current score</p>
+        <p class="high-score">high-score</p>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
