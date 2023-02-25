@@ -56,7 +56,7 @@ btn.addEventListener("click", function () {
 });
 
 btn.addEventListener("dblclick", function () {
-  scoreTracker = 0;
+  scoreTracker = 20;
   number.innerHTML = "?";
   body.style.backgroundColor = "#00425a";
   score.innerHTML = `💯 current score ${scoreTracker}`;
