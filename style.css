@@ -17,9 +17,10 @@ SPACING SYSTEM (PX)
   line-height: 1;
   font-family: "Press Start 2P", cursive;
 }
-
-body {
+html {
   font-size: 62.5%;
+}
+body {
   background-color: #00425a;
 }
 
@@ -88,3 +89,17 @@ body {
 #BFDB38
 #FC7300
 */
+
+@media (max-width: 400px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  .game-info {
+    font-size: 1.2rem;
+  }
+
+  .btn {
+    font-size: 1.8rem;
+  }
+}

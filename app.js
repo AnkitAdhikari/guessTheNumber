@@ -20,12 +20,9 @@ let highScore = document.querySelector(".high-score");
 let scoreTracker = 20;
 let highScoreTracker = 0;
 
+console.dir(btn);
 // listenting to the button click event
 btn.addEventListener("click", function () {
-  let r = Math.floor(Math.random() * 258);
-  let g = Math.floor(Math.random() * 258);
-  let b = Math.floor(Math.random() * 258);
-  gameInformation.style.color = `rgb(${r},${g},${b})`;
   // number guessed by user
   let userNumber = document.querySelector(".user-number");
   console.log(userNumber.value);
@@ -39,9 +36,15 @@ btn.addEventListener("click", function () {
     highScore.innerHTML = `🏆 Your highScore is ${scoreTracker}`;
 
     btn.innerHTML = "Double Click to reset";
+    btn.style.fontSize = "10px";
+    gameInformation.style.color = `#000`;
 
     // still need to reset
   } else {
+    let r = Math.floor(Math.random() * 258);
+    let g = Math.floor(Math.random() * 258);
+    let b = Math.floor(Math.random() * 258);
+    gameInformation.style.color = `rgb(${r},${g},${b})`;
     if (Number(userNumber.value) > randNumber) {
       gameInformation.innerHTML = "Enter lower number";
     } else {
