@@ -61,5 +61,5 @@ btn.addEventListener("dblclick", function () {
   body.style.backgroundColor = "#00425a";
   score.innerHTML = `💯 current score ${scoreTracker}`;
   btn.innerHTML = "Guess";
-  gameInformation.innerHTML = "Start guessing";
+  gameInformation.innerHTML = "🚀 Start gueesing";
 });
