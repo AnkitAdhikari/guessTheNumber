@@ -1,2 +1,2 @@
 # guessTheNumber
-It is number guessing game made while learnig javascipt DOM manuplation
+It is number guessing game made while learning javascript DOM manuplation
