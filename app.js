@@ -22,6 +22,10 @@ let highScoreTracker = 0;
 
 // listenting to the button click event
 btn.addEventListener("click", function () {
+  let r = Math.floor(Math.random() * 258);
+  let g = Math.floor(Math.random() * 258);
+  let b = Math.floor(Math.random() * 258);
+  gameInformation.style.color = `rgb(${r},${g},${b})`;
   // number guessed by user
   let userNumber = document.querySelector(".user-number");
   console.log(userNumber.value);
