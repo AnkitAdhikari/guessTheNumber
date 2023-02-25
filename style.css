@@ -61,10 +61,6 @@ body {
   gap: 3.2rem;
 }
 
-input {
-  font-size: 1.8rem;
-}
-
 .user-number {
   font-size: 2rem;
   padding: 0.8rem 1.2rem;
@@ -77,6 +73,7 @@ input {
   background-color: #1f8a70;
   border: none;
   border-radius: 0.3rem;
+  font-size: 1.8rem;
 }
 
 .game-info {
