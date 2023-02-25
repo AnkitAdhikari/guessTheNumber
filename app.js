@@ -34,6 +34,8 @@ btn.addEventListener("click", function () {
 
     highScore.innerHTML = `🏆 Your highScore is ${scoreTracker}`;
 
+    btn.innerHTML = "Double Click to reset";
+
     // still need to reset
   } else {
     if (Number(userNumber.value) > randNumber) {
@@ -44,4 +46,13 @@ btn.addEventListener("click", function () {
     scoreTracker--;
     score.innerHTML = `💯 current score ${scoreTracker}`;
   }
+});
+
+btn.addEventListener("dblclick", function () {
+  scoreTracker = 0;
+  number.innerHTML = "?";
+  body.style.backgroundColor = "#00425a";
+  score.innerHTML = `💯 current score ${scoreTracker}`;
+  btn.innerHTML = "Guess";
+  gameInformation.innerHTML = "Start guessing";
 });
