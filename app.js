@@ -34,6 +34,8 @@ start.addEventListener("click", function () {
 
     gameInformation.innerHTML = "Your guessed the number 😊";
 
+    number.style.width = "20rem";
+
     if (scoreTracker > highScoreTracker) {
       highScore.innerHTML = `🏆 Your highScore is ${scoreTracker}`;
     }

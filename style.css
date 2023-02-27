@@ -41,7 +41,7 @@ body {
 
 .number {
   border: 2px solid black;
-  width: fit-content;
+  width: 10rem;
   margin: 0 auto;
   font-size: 4.4rem;
   padding: 1.2rem 2.4rem;
