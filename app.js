@@ -3,9 +3,11 @@ const body = document.querySelector("body");
 // number hidden (?) number
 let number = document.querySelector(".number");
 //generating random number between 1 to 20
-const randNumber = Math.floor(Math.random() * 20) + 1;
+let randNumber = Math.floor(Math.random() * 20) + 1;
 // targeting the Guess button
-const btn = document.querySelector(".btn");
+const start = document.querySelector(".start");
+// play again button
+const again = document.querySelector(".again");
 
 // gameInformation for user
 let gameInformation = document.querySelector(".game-information");
@@ -20,9 +22,8 @@ let highScore = document.querySelector(".high-score");
 let scoreTracker = 20;
 let highScoreTracker = 0;
 
-console.dir(btn);
 // listenting to the button click event
-btn.addEventListener("click", function () {
+start.addEventListener("click", function () {
   // number guessed by user
   let userNumber = document.querySelector(".user-number");
   console.log(userNumber.value);
@@ -55,7 +56,7 @@ btn.addEventListener("click", function () {
   }
 });
 
-btn.addEventListener("dblclick", function () {
+again.addEventListener("click", function () {
   scoreTracker = 20;
   number.innerHTML = "?";
   body.style.backgroundColor = "#00425a";
