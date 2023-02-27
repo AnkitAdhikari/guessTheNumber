@@ -35,9 +35,6 @@ start.addEventListener("click", function () {
     gameInformation.innerHTML = "Your guessed the number 😊";
 
     highScore.innerHTML = `🏆 Your highScore is ${scoreTracker}`;
-
-    btn.innerHTML = "Double Click to reset";
-    btn.style.fontSize = "10px";
     gameInformation.style.color = `#000`;
 
     // still need to reset
@@ -45,14 +42,18 @@ start.addEventListener("click", function () {
     let r = Math.floor(Math.random() * 258);
     let g = Math.floor(Math.random() * 258);
     let b = Math.floor(Math.random() * 258);
-    gameInformation.style.color = `rgb(${r},${g},${b})`;
-    if (Number(userNumber.value) > randNumber) {
-      gameInformation.innerHTML = "Enter lower number";
+    if (scoreTracker > 1) {
+      gameInformation.style.color = `rgb(${r},${g},${b})`;
+      if (Number(userNumber.value) > randNumber) {
+        gameInformation.innerHTML = "Enter lower number";
+      } else {
+        gameInformation.innerHTML = "Enter higher number";
+      }
+      scoreTracker--;
+      score.innerHTML = `💯 current score ${scoreTracker}`;
     } else {
-      gameInformation.innerHTML = "Enter higher number";
+      gameInformation.innerHTML = "You Lose";
     }
-    scoreTracker--;
-    score.innerHTML = `💯 current score ${scoreTracker}`;
   }
 });
 
@@ -61,6 +62,5 @@ again.addEventListener("click", function () {
   number.innerHTML = "?";
   body.style.backgroundColor = "#00425a";
   score.innerHTML = `💯 current score ${scoreTracker}`;
-  btn.innerHTML = "Guess";
   gameInformation.innerHTML = "🚀 Start gueesing";
 });
