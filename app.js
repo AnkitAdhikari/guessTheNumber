@@ -65,4 +65,5 @@ again.addEventListener("click", function () {
   body.style.backgroundColor = "#00425a";
   score.innerHTML = `💯 current score ${scoreTracker}`;
   gameInformation.innerHTML = "🚀 Start gueesing";
+  randNumber = Math.floor(Math.random() * 20) + 1;
 });
