@@ -22,10 +22,10 @@ let highScore = document.querySelector(".high-score");
 let scoreTracker = 20;
 let highScoreTracker = 0;
 
+let userNumber = document.querySelector(".user-number");
 // listenting to the button click event
 start.addEventListener("click", function () {
   // number guessed by user
-  let userNumber = document.querySelector(".user-number");
   console.log(userNumber.value);
   if (userNumber.value == randNumber) {
     body.style.backgroundColor = "#BFDB38";
@@ -66,4 +66,5 @@ again.addEventListener("click", function () {
   score.innerHTML = `💯 current score ${scoreTracker}`;
   gameInformation.innerHTML = "🚀 Start gueesing";
   randNumber = Math.floor(Math.random() * 20) + 1;
+  userNumber.value = "";
 });
