@@ -37,6 +37,7 @@ start.addEventListener("click", function () {
     number.style.width = "20rem";
 
     if (scoreTracker > highScoreTracker) {
+      highScoreTracker = scoreTracker;
       highScore.innerHTML = `🏆 Your highScore is ${scoreTracker}`;
     }
     gameInformation.style.color = `#000`;
